@@ -257,6 +257,49 @@
 
 <h1 class='branch'>Branches - abominable</h1>
 
+<div id="app" style="height: 100vh">
+  <!-- Webamp will attempt to center itself within this div -->
+</div>
+<script src="https://unpkg.com/webamp@1.4.2/built/webamp.bundle.min.js"></script>
+<script>
+  const Webamp = window.Webamp;
+  const webamp = new Webamp({
+    /**
+     * Here we list three tracks. Note that the `metaData` fields and
+     * duration are required to populate the playlist.  If any of those
+     * fields are omitted, Webamp will download at least part of each file
+     * on initial page load in order to determine the missing information.
+     */
+    initialTracks: [
+      {
+        metaData: {
+          artist: "Sycamore",
+          title: "abominable",
+        },
+        // NOTE: Your audio file must be served from the same domain as your HTML
+        // file, or served with permissive CORS HTTP headers:
+        // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+        url: "https://github.com/drmarkreuter/branchesAlbum/blob/main/mp3/Branches%20-%2001%20-%20Sycamore%20-%20Abominable.mp3",
+        duration: 437,
+      },
+      {
+        metaData: {
+          title: "Ash",
+          artist: "abominable",
+        },
+        // NOTE: Your audio file must be served from the same domain as your HTML
+        // file, or served with permissive CORS HTTP headers:
+        // https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+        url: "https://github.com/drmarkreuter/branchesAlbum/blob/42cfc9dcb3780c5e26356b53eaff7f966186f693/mp3/Branches%20-%2002%20-%20Ash%20-%20Abominable.mp3",
+        duration: 362,
+      },
+    ],
+  });
+
+  // Returns a promise indicating when it's done loading.
+  webamp.renderWhenReady(document.getElementById("app"));
+</script>
+
 <footer>
   <p>Made wth love by Mark</p>
   <p><a href="mailto:mark.reuter@googlemail.com?subject=branches">contact</a></p>
