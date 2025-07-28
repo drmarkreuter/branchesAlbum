@@ -8,6 +8,12 @@
     text-align: center;
     font-family: monospace;
     font-size: 24px;
+    letter-spacing: 3px;
+    transition: letter-spacing 1s ease;
+  }
+
+  .branch:hover {
+    letter-spacing: 10px;
   }
   
   .prose {
@@ -239,12 +245,27 @@
       <br>
       <a href="https://drmarkreuter.github.io/schlafenEP/" target="_blank">Schlafen</a>
     </th>
+    </tr>
+    <tr>
     <th>
       <h4 class='branch'>Black Dust</h4>
       <a href="https://drmarkreuter.github.io/blackdustEP/" target="_blank"><img class='wordart' src='images/blackdust_coverart_logo_version700x700.png' width='300px'></a>
       <br>
       <a href="https://drmarkreuter.github.io/blackdustEP/" target="_blank">Black Dust</a>
     </th>
+    <th>
+      <h4 class='branch'>Labyrinth Eleven</h4>
+      <a href="https://drmarkreuter.github.io/labyrinthElevenAlbum/" target="_blank"><img class='wordart' src='images/labyrinthElevenCover-warm-fuzzy2-1400x1400.png' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/labyrinthElevenAlbum/" target="_blank">Labyrinth Eleven</a>
+    </th>
+    <th>
+      <h4 class='branch'>Silk</h4>
+      <a href="https://drmarkreuter.github.io/silkAlbum/" target="_blank"><img class='wordart' src='images/silk-album-warm2-1400x1400.png' width='300px'></a>
+      <br>
+      <a href="https://drmarkreuter.github.io/silkAlbum/" target="_blank">Silk</a>
+    </th>
+
   </tr>
 </table>
 <br>
@@ -257,6 +278,8 @@
 
 <h1 class='branch'>Branches - abominable</h1>
 
+<br>
+<h1>Webamp Demo</h1>
 <div id="app" style="height: 100vh">
   <!-- Webamp will attempt to center itself within this div -->
 </div>
@@ -273,8 +296,8 @@
     initialTracks: [
       {
         metaData: {
-          artist: "Sycamore",
-          title: "abominable",
+          artist: "abominable",
+          title: "Sycamore",
         },
         // NOTE: Your audio file must be served from the same domain as your HTML
         // file, or served with permissive CORS HTTP headers:
